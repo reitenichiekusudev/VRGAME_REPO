@@ -66,5 +66,6 @@ public class enemydetection : MonoBehaviour
     {
         if (other.gameObject == player)
             seenplayer = false;
+        Debug.Log("<color=green>Fatal error:</color> player not seen");
     }
 }
