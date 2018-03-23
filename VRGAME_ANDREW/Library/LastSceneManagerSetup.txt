@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/enemydetectionscene.unity
-  isLoaded: 1
-  isActive: 1
