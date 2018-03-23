@@ -79,6 +79,7 @@ public class enemyAIscript : MonoBehaviour {
         nav.speed = patrolSpeed;
         if (nav.destination == lastplayersighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)
         {
+            Debug.Log("<color=green> hihi </color>");
             patrolTimer += Time.deltaTime;
             if (patrolTimer >= patrolWaitTime)
             {
