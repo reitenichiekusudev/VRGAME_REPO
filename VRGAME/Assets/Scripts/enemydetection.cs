@@ -9,6 +9,7 @@ public class enemydetection : MonoBehaviour
     public bool seenplayer;
     public Vector3 PersonalLastSighting;
     private NavMeshAgent navmeshagent;
+    
     private SphereCollider sphere;
     private lastplayersighting lastplayersighting;
     private Animator anim;
@@ -44,7 +45,7 @@ public class enemydetection : MonoBehaviour
             seenplayer = false;
             Vector3 direction = other.transform.position - transform.position;
             float angle = Vector3.Angle(direction, transform.forward);
-
+            
             if (angle < FoVangle * 0.5f)
             {
                 RaycastHit hit;

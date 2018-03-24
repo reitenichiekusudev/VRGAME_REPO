@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class enemyAIscript : MonoBehaviour {
 
-    public float patrolSpeed = 2f;
-    public float chaseSpeed = 5f;
+    public float patrolSpeed = 10f;
+    public float chaseSpeed = 15f;
     public float chaseWaitTime = 5f;
     public float patrolWaitTime = 1f;
     public Transform[] patrolWayPoints;
@@ -75,8 +75,9 @@ public class enemyAIscript : MonoBehaviour {
     void Patroling()
     {
         nav.isStopped = false;
-        Debug.Log("<color=green> patrolling </color>");
+       
         nav.speed = patrolSpeed;
+        Debug.Log(nav.speed);
         if (nav.destination == lastplayersighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)
         {
             Debug.Log("<color=green> hihi </color>");
